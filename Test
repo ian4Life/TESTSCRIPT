@@ -1,20 +1,29 @@
--- Place this script in StarterPlayerScripts
+local LoadingScreen = script.Parent
+local Background = LoadingScreen:WaitForChild("Background")
+local LoadingText = LoadingScreen:WaitForChild("LoadingText")
 
-local loadingScreen = script.Parent:WaitForChild("LoadingScreen")
-local progressBar = loadingScreen:WaitForChild("ProgressBar")
-local loadingText = loadingScreen:WaitForChild("LoadingText")
-
--- Function to update the loading progress
-local function updateProgress(progress)
-    progressBar.Size = UDim2.new(progress, 0, 1, 0)
-    loadingText.Text = string.format("Loading: %.0f%%", progress * 100)
+local function UpdateLoadingText()
+    local loadingPhrases = {
+        "Loading...",
+        "Almost there...",
+        "Preparing the game...",
+        "Getting things ready...",
+    }
+    local randomIndex = math.random(1, #loadingPhrases)
+    LoadingText.Text = loadingPhrases[randomIndex]
 end
 
--- Simulate loading progress
+UpdateLoadingText()
+
+-- You can put your loading logic here
+-- For example, load assets, set up the game environment, etc.
+
+-- Simulate loading progress for demonstration
 for i = 1, 100 do
-    updateProgress(i / 100)
-    wait(0.1)  -- Simulate loading time
+    wait(0.1)
+    UpdateLoadingText()
 end
 
--- Hide the loading screen when done
-loadingScreen:TweenOut()
+-- Hide the loading screen when loading is complete
+LoadingScreen:TweenOut(0.5) -- Replace with your own animation or method
+
