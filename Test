@@ -1,6 +1,6 @@
 local Loading = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
-local Title = Instance.new("TextLabel")
+local Title = Instance.new("Loading")
 local Dots = Instance.new("Frame")
 local Dot1 = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
