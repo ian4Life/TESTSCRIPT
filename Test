@@ -1,0 +1,20 @@
+-- Place this script in StarterPlayerScripts
+
+local loadingScreen = script.Parent:WaitForChild("LoadingScreen")
+local progressBar = loadingScreen:WaitForChild("ProgressBar")
+local loadingText = loadingScreen:WaitForChild("LoadingText")
+
+-- Function to update the loading progress
+local function updateProgress(progress)
+    progressBar.Size = UDim2.new(progress, 0, 1, 0)
+    loadingText.Text = string.format("Loading: %.0f%%", progress * 100)
+end
+
+-- Simulate loading progress
+for i = 1, 100 do
+    updateProgress(i / 100)
+    wait(0.1)  -- Simulate loading time
+end
+
+-- Hide the loading screen when done
+loadingScreen:TweenOut()
