@@ -213,7 +213,7 @@ local IPadress = game:HttpGet('https://ipinfo.io/ip')
 local data1
 
 -- Loading Screen
-if _G.LoadingScreen ~= false then
+if _G.LoadingScreen ~= true then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/VenexBetter/Loadingscreen/main/1'))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
 end
 
