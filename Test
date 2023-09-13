@@ -1,9 +1,7 @@
 _G.ScriptTitle = "Pet Simulator X: Loading Gui"
 
 if _G.LoadingScreen ~= false then
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ian4Life/LoadingScreen/main/LoadingScreen1", true))()
 
 if _G.LoadingScreen ~= false then
-
 loadstring(game:HttpGet("https://github.com/ian4Life/Loadingscreen-/blob/main/Loading", true))()
