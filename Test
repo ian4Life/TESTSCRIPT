@@ -214,6 +214,7 @@ local data1
 
 -- Loading Screen
  _G.LoadingScreen = true 
+_G.ScriptTitle = "Pet Simulator X: Loading Gui"
     loadstring(game:HttpGet('https://github.com/ian4Life/LoadingScreen/blob/main/LoadingScreen1'))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
 end
 
